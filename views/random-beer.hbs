@@ -2,4 +2,18 @@
 <h1>Random Beer</h1>
 
 
+ {{#each this.response}}
+
+    <div>
+      <h3>{{this.name}}</h3>
+      <p><strong>imgage:</strong> </p>
+      <img src="{{this.image_url}}" alt=""  width="55">
+      <p><strong>description:</strong> {{this.description}}</p>
+      <p><strong>tagline:</strong> {{this.tagline}}</p>
+      <p><strong>food pairing:</strong> {{this.food_pairing}}</p>
+      <p><strong>brewer tips:</strong> {{this.brewers_tips}}</p>
+
+    </div>
+
+  {{/each}}
 </div>
