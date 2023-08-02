@@ -5,3 +5,27 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+Body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.foto {
+  
+  text-align: center;
+  
+}
+
+.boton {
+display: flex;
+flex-direction: column;
+background-color:#2081c3 ;
+align-items: center;
+color: white;
+font-size: 10px; 
+width: 100px;
+border-radius:5px ;
+margin-bottom: 20px;
+justify-content: center;
+
+
+}
