@@ -1,19 +1,18 @@
-<div>
-<h1>Random Beer</h1>
+{{#each this.response}}
+<div class="random">
+  <div>
+    <img src={{this.image_url}} alt='' width='70' />
+  </div>
+  <div>
+    <h3>{{this.name}}</h3>
+    <p id="grey"> {{this.tagline}}</p>
+    
 
+    <p> {{this.description}}</p>
+    
+    <p><strong>Food Pairing:</strong><br><li>{{this.food_pairing}}</li></p>
+    <p><strong>Brewer Tips:</strong> {{this.brewers_tips}}</p>
 
- {{#each this.response}}
-<img class="fotoran" src="{{this.image_url}}" alt=""  width="55">
-    <div class="random">
-      <h3>{{this.name}}</h3>
-      <p><strong></strong> </p>
-      
-      <p><strong>description:</strong> {{this.description}}</p>
-      <p><strong>tagline:</strong> {{this.tagline}}</p>
-      <p><strong>food pairing:</strong> {{this.food_pairing}}</p>
-      <p><strong>brewer tips:</strong> {{this.brewers_tips}}</p>
-
-    </div>
-
-  {{/each}}
+  </div>
 </div>
+{{/each}}

@@ -1,15 +1,17 @@
 <div>
 
-<h1>Beers</h1>
+<h2>Did you try our best 25 beers?</h1>
 
  {{#each this.beers}}
 
-    <div>
-      <h3>{{this.name}}</h3>
-      <p><strong>imgage:</strong> </p>
-      <img src="{{this.image_url}}" alt=""  width="55">
-      <p><strong>description:</strong> {{this.description}}</p>
-      <p><strong>tagline:</strong> {{this.tagline}}</p>
+    <div class= "random">
+      <dir>   <img src="{{this.image_url}}" alt=""  width="55">
+</dir>
+<dir><h3>{{this.name}}</h3>
+          
+      <p><strong>Description:</strong> {{this.description}}</p>
+      <p><strong>Tagline:</strong> {{this.tagline}}</p>
+      </dir>
       
 
     </div>
