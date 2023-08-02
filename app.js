@@ -23,7 +23,20 @@ app.get('/', (req, res) => {
 });
 
 app.get("/beers",(req,res,next) =>{
-res.render("beers.hbs")
+  punkAPI
+  .getBeers()
+  .then((response)=>{
+   res.render("beers.hbs",{beers:response})
+   
+  })
+
+
+  .catch(error => 
+    
+    console.log(error));
+
+
+
 
 });
 

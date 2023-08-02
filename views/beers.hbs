@@ -2,7 +2,20 @@
 
 <h1>Beers</h1>
 
-...
+ {{#each this.beers}}
+
+    <div>
+      <h3>{{this.name}}</h3>
+      <p><strong>imgage:</strong> </p>
+      <img src="{{this.image_url}}" alt=""  width="55">
+      <p><strong>description:</strong> {{this.description}}</p>
+      <p><strong>tagline:</strong> {{this.tagline}}</p>
+      
+
+    </div>
+
+  {{/each}}
+
 
 
 </div>
