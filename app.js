@@ -49,17 +49,19 @@ app.get("/random-beer", (req,res,next)=>{
   })
   .catch(error => console.log(error));
 
-
-
-
-
 })
 
 
+// METODO ASYNC AWAIT
+// app.get("/random-beer", async (req,res,next)=>{
+//  try{
+// const responseFromApi = await punkAPI.getRandom()
+// res.render("random-beer.hbs", {randomBeer:responseFromApi})  
+//  } catch(error) {
+// console.log(error)
 
-
-
-
+//  }
+//   })
 
 
 
